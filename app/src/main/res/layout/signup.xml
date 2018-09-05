@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:hint="Userame"
+        android:textColorHint="#F08080"
+        />
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_username"
+        android:layout_margin="24dp"
+        android:hint="Password"
+        android:textColorHint="#F08080"
+        />
+   <Button
+       android:id="@+id/btn_submit"
+       android:layout_width="148dp"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ed_password"
+       android:layout_marginLeft="96dp"
+       android:text="Submit"
+       android:background="#F08080"
+       android:textColor="#ffffff"
+       />
+
+
+</RelativeLayout>

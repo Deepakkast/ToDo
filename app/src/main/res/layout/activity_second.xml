@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/ivTopImage"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:src="@drawable/hill"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:textSize="25dp"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="150dp" />
+    <TextView
+        android:id="@+id/tvday1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:text="Date"
+        android:layout_below="@+id/tvdate"/>
+
+
+    <LinearLayout
+        android:id="@+id/ivlinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/ivTopImage">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add task"
+            android:textSize="18sp"
+            android:textColor="#8b0000"
+            android:layout_marginLeft="12dp"/>
+
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivTopImage"
+            android:layout_margin="12dp"
+            android:hint="Subject"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:focusable="false"
+            android:layout_margin="12dp" />
+
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calender"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/ivTopImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="18dp"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_check"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_check_black_24dp"
+        android:tint="@android:color/white"
+
+        />
+
+</RelativeLayout>
